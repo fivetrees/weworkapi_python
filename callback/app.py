@@ -8,7 +8,7 @@ import xml.etree.ElementTree
 class MainHandler(tornado.web.RequestHandler):
 
     def get(self):
-        sToken = "L29xbwRgtizyOpOd9cs8oPXM5Wv"
+        sToken = "L29xbwRgtizyOpOd9cs8oPXM5W2"
         sEncodingAESKey = "NfaRUX3KXZxz7mbF3fAPhJB5gLeRTmhEbEoDViPmf8q"
         sCorpID = "wweeae43b713dd2b06"
         wxcpt=WXBizMsgCrypt(sToken,sEncodingAESKey,sCorpID)
@@ -26,7 +26,7 @@ class MainHandler(tornado.web.RequestHandler):
         self.write(sEchoStr)
 
     def post(self):
-        sToken = "L29xbwRgtizyOpOd9cs8oPXM5Wv"
+        sToken = "L29xbwRgtizyOpOd9cs8oPXM5W2"
         sEncodingAESKey = "NfaRUX3KXZxz7mbF3fAPhJB5gLeRTmhEbEoDViPmf8q"
         sCorpID = "wweeae43b713dd2b06"
         wxcpt = WXBizMsgCrypt(sToken, sEncodingAESKey, sCorpID)
